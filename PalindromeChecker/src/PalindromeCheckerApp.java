@@ -1,23 +1,18 @@
+class PalindromeCheckerApp {
+    static void main() {
+        String str = "madam";
+        boolean isPalindrome = true;
+        for (int i = 0; i < str.length() / 2; i++){
+            if(str.charAt(i) !=str.charAt(str.length()-1-i)){
+                isPalindrome=false;
+                break;
 
-
- class UseCase1PalindromeCheckerApp {
-
-
-    private static final String APP_NAME = "Palindrome Checker App";
-    private static final String APP_VERSION = "1.0.0";
-
-
-    public static void main(String[] args) {
-
-        System.out.println("=====================================");
-        System.out.println("     Welcome to " + APP_NAME);
-        System.out.println("=====================================");
-        System.out.println("Application Version : " + APP_VERSION);
-        System.out.println("Author              : System");
-        System.out.println("=====================================");
-
-        System.out.println("Application started successfully.");
-        System.out.println("Ready for palindrome validation...");
-        System.out.println("=====================================");
+            }
+        }
+        if ( isPalindrome){
+            System.out.println(str + " is Palindrome");
+        } else {
+            System.out.println(str + " is not a palindrome");
+        }
     }
 }
